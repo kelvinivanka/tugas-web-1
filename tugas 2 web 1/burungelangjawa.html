@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		body {
+			background: url("background/background.jpg");
+		}
+		.topnav {
+			overflow: hidden;
+			background-image: url('background/navbar.jpg');
+			
+		}
+		.topnav ul {
+			margin: 0;
+			padding: 0;
+		}
+		.topnav ul li {
+			margin: 10px;
+			list-style-type: none;
+
+		}
+		.topnav a {
+			float: left;
+			color: black;
+			text-align: center;
+			padding: 10px 20px;
+			text-decoration: none;
+			font-size: 17px;
+			font-weight: bolder;
+			font-family: arial;
+			
+		}
+
+		.topnav a:hover {
+		  background-image: url("background/float.png");
+		  color: black;
+		}
+
+
+		
+
+	</style>
+</head>
+<body>
+	<nav class="topnav">
+		<ul>
+   			<li><a href="main.html">Home</a></li>
+  			<li><a href="list.html">List</a></li>
+			<li><a href="contactus.html">Contact Us</a></li>
+			
+		</ul>
+	</nav>
+	<div>
+	<h1 align="center"; style="background-color: white"><b>Burung Elang Jawa</b></h1>
+	<p align="center"><img src="hewan/burung-elang-jawa.jpg" width="720px" height="480px" title="klik untuk lihat gambar lain"></p>
+	
+	<script type="text/javascript">
+		var myImage = document.querySelector('img');
+
+		myImage.onclick = function() {
+	    var mySrc = myImage.getAttribute('src');
+	    if(mySrc === 'hewan/burung-elang-jawa.jpg') {
+	     	myImage.setAttribute ('src','hewan/burung-elang-jawa1.jpg');
+	    } else {
+	    	myImage.setAttribute ('src','hewan/burung-elang-jawa.jpg');
+	    }
+		}
+	</script>
+
+	<p style="background-color: white">
+		Burung Elang ini mempunyai bentuk yang sangat gagah, namun sangat disayangkan populasinya kini tinggal 250 ekor saja. Keberadaannya hampir tersebar merata di sekitar hutan di pulau Jawa seperti gunung Anjasmoro, gunung Kawi, gunung Salak, gunung Slamet dan masih banyak lagi yang lainnya. Selain di gunung-gunung, hewan ini juga terdapat dibeberapa taman nasional yang ada di Jawa seperti Taman nasional Gunung Gede Pangrango serta Taman Nasional Muara Betiri.
+	</p>
+
+	</div>
+	
+	<footer style="background-color: beige; padding: 5px; text-align: center; display: block; opacity: 0.7; ">
+        <p>
+            Powered by Kelvin Ivanka
+        </p>
+    </footer>
+</body>
+</html>
